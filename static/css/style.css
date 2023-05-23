@@ -1,0 +1,16 @@
+ul{  
+    padding:0;  
+    background:black;  
+    font-family:Arial;
+}
+
+li{  
+    display:inline-block;
+}
+
+a{  
+    display:block;  
+    padding:10px;  
+    color:white;  
+    text-decoration:none;
+}
