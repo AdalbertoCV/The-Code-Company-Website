@@ -1,0 +1,46 @@
+{% extends 'homeOfi.html' %}
+{% load static %}
+
+
+{% block titulo %}
+    <div class="col-sm-8" align="center">                                     
+        <h1 class="mb-0 fw-bold" style="text-align: left;">TCC - Contacto</h1>                         
+    </div> 
+{% endblock titulo %}    
+
+{% block contenido %} 
+    <div class="bg-gradient" align="center">
+        <div class="container" align="center">
+            <div class="col o-hidden border-0 shadow-lg my-5" align="center">
+                <div class="card-body" align="center">
+                    <!-- Nested Row within Card Body -->
+                    <div class="row">
+                        <div class="col-sm-8" align="center">
+                        <img src="{% static 'img/Logo.jpg' %}" style="height: 300px; width: 300px; border-radius: 5px; background-position: center;
+                        background-size: cover; text-align: start;">
+                        <div class="flexbox-align">
+                            <div class="flexbox-align__content">
+                                <div class="text-center"><br>
+                                    <h1 class="h4 text-gray-900 mb-4">Nos puedes encontrar en: </h1>
+                                </div>
+                                <div>
+                                    <hr>
+                                    <a href="mailto:thecodecompany@gmail.com" class="btn btn-google btn-user btn-block">
+                                        <i class="fab fa-google fa-fw"></i> Google
+                                    </a>
+                                    <a href="https://www.facebook.com/Ing.Software.UAZ" class="btn btn-facebook btn-user btn-block">
+                                        <i class="fab fa-facebook-f fa-fw"></i> Facebook
+                                    </a>
+                                    <a href="" class="btn btn-success btn-block">
+                                        <i class=""></i> Teléfono 
+                                    </a>
+                                </div>
+                                <hr>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </div>
+{% endblock contenido %}

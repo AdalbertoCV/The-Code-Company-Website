@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+p, h1, h2, h3, small {
+    font-family: 'Rubik', sans-serif;
+}
+
 ul{  
     padding:0;  
     background:black;  
@@ -13,4 +20,177 @@ a{
     padding:10px;  
     color:white;  
     text-decoration:none;
+}
+
+.main_div {
+    width: 55%;
+    margin: 100px auto;
+}
+
+.feed_principal {
+    margin-bottom: 15px;
+    padding: 15px 20px 0;
+    background: #eff3fe;
+    border-radius: 5px;
+    position: relative;
+}
+
+.feed_one {
+    position: relative;
+}
+
+.titulo_header {
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.big {
+    margin-right: 5px;
+    margin-left: 0px;
+    font-weight: bold;
+    font-size: 19px;
+    display: inline;
+    line-height: 1.3;
+    color: black;
+}
+
+.feed_propiedad {
+    display: table;
+    width: 100%;
+}
+
+.feed_avatar {
+    display: table-cell;
+    width: 45px;
+}
+
+.userAvatar {
+    background-size: 100%;
+    background: transparent no-repeat 0 0;
+    position: relative;
+    display: block;
+    margin-right: 15px;
+    float: left;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.feed_detalles {
+    font-size: 12px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.feed_meta {
+    color: #b2b2b2;
+}
+
+.btn_preguntar {
+    outline: none;
+    border: none;
+    padding: 10px;
+    columns: #fff;
+    background: #4b69c2;
+    color: #fff;
+    border-radius: 5px;
+    display: block;
+    margin-right: 7px 0;
+}
+
+.btn_comentar {
+    padding: 7px;
+    width: 150px;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    color: #fff;
+    background: #4b69c2;
+    border: none;
+    border-radius: 5px;
+}
+
+#id_texto {
+    width: 100%;
+    box-sizing: border-box;
+    font: inherit;
+    direction: ltr;
+    outline: none;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #dee0e1;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 50px;
+    max-height: 50px;
+    height: 50px;
+}
+
+.div_ver_comentarios {
+    margin: 10px 0;
+}
+
+.div_eliminar {
+    width: 50%;
+    margin: 100px auto;
+    background: #dee0e1;
+    border-radius: 5px;
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    background: #4b69c2;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    border-bottom: 5px solid #6d932b;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.abrir_caja_reply {
+    display: none;
+
+}
+
+.btn_responder .btn_enviar{
+    background: #00bcd4;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 13px;
+    border-bottom: 5px solid #4b69c2;  
+
+}
+
+.contar_reply {
+    width: 100px;
+    padding: 3px;
+    display: block;
+    color: #fff;
+    background: #333;
+    border-radius: 50px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-size: 13px;
+    text-align: center;
+}
+
+.p_comentario {
+    margin: 10px 0;
+    font-weight: 500;
 }

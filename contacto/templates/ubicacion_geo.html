@@ -1,0 +1,22 @@
+{% extends 'homeOfi.html' %}
+{% load static %}
+
+    {% block titulo %}   
+    <div class="col-sm-8" align="center">                                     
+        <h1 class="mb-0 fw-bold" style="text-align: left;">TCC - Ubicación</h1>                         
+    </div>
+    {% endblock titulo %}
+ 
+
+{% block contenido %}    
+    <div class="bg-gradient" align="center">
+        <div class="container" style="width: 600px;">                    
+                
+            <div id="map-container-google-1" class="z-depth-1-half map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d699.0174288624809!2d-102.6443968974498!3d22.772959339680995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x868251f335b47a89%3A0x51b0787b01175fa0!2sUAZ%3A%20Edificio%20de%20Ingenier%C3%ADa%20en%20Computaci%C3%B3n%20y%20Software!5e0!3m2!1ses!2smx!4v1685310285111!5m2!1ses!2smx" 
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> 
+            
+        </div>
+    </div>  
+{% endblock contenido %}                          

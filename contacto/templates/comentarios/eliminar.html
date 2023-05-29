@@ -1,0 +1,19 @@
+{% extends 'homeOfi.html' %}
+
+
+{% block contenido %}
+    <div class="div_eliminar">
+        <h1>
+            Confirmar eliminación
+        </h1>
+        <form method="POST">
+            {% csrf_token %}
+            <p>¿Estás seguro de eliminar <strong>{{instance.texto}}?</strong></p>
+            <button type="submit">Confirmar</button>
+
+            <a href="{{instance.content_object.get_absolute_url}}">Cancelar</a>
+        </form>
+    </div>
+    
+{% endblock contenido %}
+    
