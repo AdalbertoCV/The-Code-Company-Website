@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'tcc',
     'contacto',
+    'clientes',
 ]
 
 MIDDLEWARE = [

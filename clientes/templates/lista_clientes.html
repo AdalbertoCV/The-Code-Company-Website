@@ -3,12 +3,11 @@
 
 {% block titulo %}
     <div class="col-sm-8" aling="center">                                     
-        <h1 class="mb-0 fw-bold" style="text-align: left;">TCC - Preguntas y Comentarios</h1>                         
+        <h1 class="mb-0 fw-bold" style="text-align: left;">TCC - Clientes</h1>                         
     </div>    
 {% endblock titulo %}
-    
+
 {% block contenido %}      
-    <!-- Custom styles for this template -->
   <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
       <symbol id="check2" viewBox="0 0 16 16">
@@ -28,15 +27,43 @@
 
 <main class="container" style="background: #e8e7e7e4; border-radius: 10px; text-align: center;">
   <div class="bg-body-tertiary p-5 rounded" style="margin: 80px; color: black; text-align: start; margin-bottom: 10px;">
-    {% for pregunta in preguntas %}   
-    <br><h1>{{pregunta.titulo}}</h1>
-        <p class="lead">{{pregunta.contenido | slice:":50"}}</p>
-        <a class="btn btn-lg btn-primary" href="{% url 'detalle_preguntas' pregunta.id %}" role="button">Ver &raquo;</a><hr>
-    {% endfor %}
+    <table class="table">
+        <thead>
+             <tr>
+                <th>Cliente</th>
+                <th>Satisfacción</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for cliente in clientes %}
+                <tr>
+                    <td>
+                        <br>
+                            <h1>{{cliente.nombre}}</h1>
+                            <img src="{% static '' %}img/{{cliente.logo}}" width="100" height="100"> 
+                            <p class="lead">{{cliente.descripcionTrabajo}}</p>
+                        </br>
+                    </td>
+                    <td> 
+                        <br>
+                        {% if cliente.satisfaccion == '1' %}
+                            <br>
+                            <img src="{% static 'img/alta.png' %}" width="100" height="100">
+                         {% elif cliente.satisfaccion == '2'  %}
+                            <br>
+                            <img src="{% static 'img/media.png' %}" width="100" height="100">
+                         {% else %}
+                             <br>
+                            <img src="{% static 'img/baja.png' %}" width="100" height="100">
+                         {% endif %}
+                        </br>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
     </div>
 </main>
 
 </body>
 {% endblock contenido %}
-
-    
