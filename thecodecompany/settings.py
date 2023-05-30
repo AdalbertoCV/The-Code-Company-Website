@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'tcc',
     'contacto',
     'clientes',
+    'servicios',
 ]
 
 MIDDLEWARE = [
