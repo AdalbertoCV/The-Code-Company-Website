@@ -1,0 +1,26 @@
+{% extends 'homeOfi.html' %}
+{% load static %}
+
+{% block titulo %}
+    <div class="col-sm-8" style="text-align: left;">
+        <h1 class="mb-0 fw-bold">TCC - Valores</h1>
+    </div>
+{% endblock titulo %}
+
+{% block contenido %}
+    <div class="container">
+        <div class="row">
+            {% for valor in valores %}
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title text-primary">{{ valor.nombre }}</h2>
+                        <p class="card-text">{{ valor.descripcion }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock contenido %}
+
